@@ -1,1 +1,7 @@
 ffmpeg
+smplx
+numpy
+torch
+opencv-python
+pyrender==0.1.33
+trimesh

@@ -3,7 +3,7 @@ import subprocess
 import json  
 import shutil
 
-def try_download_and_extract(data_root='data\WildAvatar', ytdl="lib\yt-dlp.exe"):
+def try_download_and_extract(data_root='data/WildAvatar', ytdl="lib/yt-dlp.exe"):
     splits = ["train.txt", "test.txt", "val.txt"]
     save_root = data_root
     
@@ -55,7 +55,7 @@ def try_download_and_extract(data_root='data\WildAvatar', ytdl="lib\yt-dlp.exe")
                     shutil.copyfile(f1, f2) 
                 shutil.rmtree(frames_dir)
             
-def generate_new_splits(data_root='data\WildAvatar'):
+def generate_new_splits(data_root='data/WildAvatar'):
     splits = ["train.txt", "test.txt", "val.txt"]
     for split in splits:
         human_list = os.path.join(data_root)
@@ -73,6 +73,6 @@ def generate_new_splits(data_root='data\WildAvatar'):
                 f.writelines([video_id + "\n"])
             
 if __name__ == "__main__":
-    data_root='data\WildAvatar'
+    data_root='data/WildAvatar'
     try_download_and_extract(data_root=data_root)
     generate_new_splits(data_root=data_root)
