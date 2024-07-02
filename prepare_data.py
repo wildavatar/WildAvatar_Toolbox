@@ -3,7 +3,7 @@ import subprocess
 import json  
 import shutil
 
-def try_download_and_extract(data_root='data/WildAvatar', ytdl="lib/yt-dlp.exe"):
+def try_download_and_extract(data_root='data/WildAvatar', ytdl="bin/yt-dlp.exe"):
     splits = ["train.txt", "test.txt", "val.txt"]
     save_root = data_root
     

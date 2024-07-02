@@ -28,3 +28,7 @@ For example, if you run
 python vis_smpl.py --subject "__-ChmS-8m8"
 ```
 The SMPL mask and overlay visualization can be found in [data/WildAvatar/__-ChmS-8m8/smpl](data/WildAvatar/__-ChmS-8m8/smpl) and [data/WildAvatar/__-ChmS-8m8/smpl_masks](data/WildAvatar/__-ChmS-8m8/smpl_masks)
+
+
+# Using WildAvatar
+we current provide several examples to load our WildAvatar for [humannerf](./lib/humannerf), [gauhuman](./lib/gauhuman), [animatable_nerf](./lib/animatable_nerf) and [sherf](./lib/sherf).
