@@ -1,7 +1,7 @@
 # Environments
 ```bash
-conda create -n WA-tools python=3.9
-conda activate WA-tools
+conda create -n wildavatar python=3.9
+conda activate wildavatar
 pip install -r requirements.txt
 pip install pyopengl==3.1.4
 ```
@@ -10,9 +10,10 @@ pip install pyopengl==3.1.4
 1. Download [WildAvatar.zip](https://zenodo.org/record/11526806/files/WildAvatar.zip)
 2. Put the **WildAvatar.zip** under [./data/WildAvatar/](./data/WildAvatar/).
 3. Unzip **WildAvatar.zip**
-4. Download and Extract images from YouTube, by running
+4. Install [yt-dlp](https://github.com/yt-dlp/yt-dlp)
+1. Download and Extract images from YouTube, by running
 ```bash
-python prepare_data.py
+python prepare_data.py --ytdl ${/path/to/yt-dlp}$
 ```
 
 # Visualization
@@ -31,4 +32,4 @@ The SMPL mask and overlay visualization can be found in [data/WildAvatar/__-ChmS
 
 
 # Using WildAvatar
-we current provide several examples to load our WildAvatar for [humannerf](./lib/humannerf), [gauhuman](./lib/gauhuman), [animatable_nerf](./lib/animatable_nerf) and [sherf](./lib/sherf).
+We currently provide several examples to load our WildAvatar for [humannerf](./lib/humannerf), [gauhuman](./lib/gauhuman), [animatable_nerf](./lib/animatable_nerf) and [sherf](./lib/sherf).

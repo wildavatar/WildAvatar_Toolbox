@@ -2,8 +2,9 @@
 import subprocess
 import json  
 import shutil
+import argparse
 
-def try_download_and_extract(data_root='data/WildAvatar', ytdl="bin/yt-dlp.exe"):
+def try_download_and_extract(data_root='data/WildAvatar', ytdl="/bin/yt-dlp"):
     splits = ["train.txt", "test.txt", "val.txt"]
     save_root = data_root
     
@@ -72,7 +73,14 @@ def generate_new_splits(data_root='data/WildAvatar'):
                     continue
                 f.writelines([video_id + "\n"])
             
+def parse_args():
+    parser = argparse.ArgumentParser(description='parse_args')
+    
+    parser.add_argument('--ytdl', type=str, default="/bin/yt-dlp")
+    parser.add_argument('--data_root', type=str, default="./data/WildAvatar")
+    return parser.parse_args()
+
 if __name__ == "__main__":
-    data_root='data/WildAvatar'
-    try_download_and_extract(data_root=data_root)
-    generate_new_splits(data_root=data_root)
+    args = parse_args()
+    try_download_and_extract(data_root=args.data_root, ytdl=args.ytdl)
+    generate_new_splits(data_root=args.data_root)
