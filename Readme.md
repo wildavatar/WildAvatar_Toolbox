@@ -13,7 +13,7 @@ pip install pyopengl==3.1.4
 4. Install [yt-dlp](https://github.com/yt-dlp/yt-dlp)
 1. Download and Extract images from YouTube, by running
 ```bash
-python prepare_data.py --ytdl ${/path/to/yt-dlp}$
+python prepare_data.py --ytdl ${PATH_TO_YT-DLP}$
 ```
 
 # Visualization
