@@ -66,4 +66,4 @@ The SMPL mask and overlay visualization can be found in [data/WildAvatar/__-ChmS
 
 
 ## Using WildAvatar
-We currently provide several examples to load our WildAvatar for [humannerf](./lib/humannerf), [gauhuman](./lib/gauhuman), [animatable_nerf](./lib/animatable_nerf) and [sherf](./lib/sherf).
+For training and testing on WildAvatar, we currently provide the adapted code for [HumanNeRF](./lib/humannerf) and [GauHuman](./lib/gauhuman). 

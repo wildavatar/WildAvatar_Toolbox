@@ -1,4 +1,14 @@
 .vscode
+assets
 data
 **/__pycache__/
-assets/*
+**/*.egg-info
+*.pyc
+lib/humannerf/datasets
+lib/humannerf/experiments
+lib/humannerf/third_parties/smpl/models/basicModel_neutral_lbs_10_207_0_v1.0.0.pkl
+lib/gauhuman/output
+lib/gauhuman/diff_rasterization/dist
+lib/gauhuman/assets
+lib/gauhuman/data
+lib/gauhuman/submodules/diff-gaussian-rasterization/third_party/glm/doc
