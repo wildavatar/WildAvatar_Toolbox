@@ -27,7 +27,7 @@ WildAvatar: Web-scale In-the-wild Video Dataset for 3D Avatar Creation
   <a href="https://wildavatar.github.io/" target='_blank'>
     <img src="https://img.shields.io/badge/Project Page-%F0%9F%93%9a-lightblue" alt="Project Page">
   </a>
-  <a href="https://youtu.be/ViAcrsq9Al8">
+  <a href="https://youtu.be/6FHgKrQeeGQ">
     <img src="https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white">
   </a>
   <a href="#">
