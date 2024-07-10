@@ -22,15 +22,19 @@ WildAvatar: Web-scale In-the-wild Video Dataset for 3D Avatar Creation
 
 <p align="center">
   <a href="https://arxiv.org/pdf/2407.02165v2" target='_blank'>
-    <img src="http://img.shields.io/badge/cs.CV-arXiv%3A2305.18279-B31B1B.svg" alt="ArXiv">
+    <img src="http://img.shields.io/badge/cs.CV-arXiv%3A2407.02165-B31B1B.svg" alt="ArXiv">
   </a>
   <a href="https://wildavatar.github.io/" target='_blank'>
     <img src="https://img.shields.io/badge/Project Page-%F0%9F%93%9a-lightblue" alt="Project Page">
+  </a>
+  <a href="https://youtu.be/ViAcrsq9Al8">
+    <img src="https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white">
   </a>
   <a href="#">
     <img src="https://visitor-badge.laobi.icu/badge?page_id=wildavatar.WildAvatar_Toolbox" alt="Visitors">
   </a>
 </p>
+
 >**TL;DR**: <em>WildAvatar is a large-scale dataset from YouTube with 10,000+ human subjects, designed to address the limitations of existing laboratory datasets for avatar creation.</em>
 
 ## Environments
