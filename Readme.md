@@ -89,4 +89,4 @@ If you find our work useful for your research, please cite our paper.
 This project is built on source codes shared by [GauHuman](https://github.com/skhu101/GauHuman), [HumanNeRF](https://github.com/chungyiweng/humannerf), and [CLIFF](https://github.com/haofanwang/CLIFF). Many thanks for their excellent contributions!
 
 ## 📧 Contact
-If you have any questions, please feel free to contact Tianqi Liu <b>(zihaohuang at hust.edu.cn)</b>.
+If you have any questions, please feel free to contact Zihao Huang <b>(zihaohuang at hust.edu.cn)</b>.
