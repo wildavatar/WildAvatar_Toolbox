@@ -37,7 +37,7 @@ WildAvatar: Web-scale In-the-wild Video Dataset for 3D Avatar Creation
 
 >**TL;DR**: <em>WildAvatar is a large-scale dataset from YouTube with 10,000+ human subjects, designed to address the limitations of existing laboratory datasets for avatar creation.</em>
 
-## Environments
+## 🔨 Environments
 ```bash
 conda create -n wildavatar python=3.9
 conda activate wildavatar
@@ -45,7 +45,7 @@ pip install -r requirements.txt
 pip install pyopengl==3.1.4
 ```
 
-## Prepare Dataset
+## 📦 Prepare Dataset
 1. Download [WildAvatar.zip](https://zenodo.org/record/11526806/files/WildAvatar.zip)
 2. Put the **WildAvatar.zip** under [./data/WildAvatar/](./data/WildAvatar/).
 3. Unzip **WildAvatar.zip**
@@ -55,7 +55,7 @@ pip install pyopengl==3.1.4
 python prepare_data.py --ytdl ${PATH_TO_YT-DLP}$
 ```
 
-## Visualization
+## 📊 Visualization
 1. Put the [SMPL_NEUTRAL.pkl](https://smpl.is.tue.mpg.de/) under [./assets/](./assets/).
 2. Run the following script to visualize the smpl overlay of the human subject of ${youtube_ID}
 ```bash
@@ -70,5 +70,23 @@ python vis_smpl.py --subject "__-ChmS-8m8"
 The SMPL mask and overlay visualization can be found in [data/WildAvatar/__-ChmS-8m8/smpl](data/WildAvatar/__-ChmS-8m8/smpl) and [data/WildAvatar/__-ChmS-8m8/smpl_masks](data/WildAvatar/__-ChmS-8m8/smpl_masks)
 
 
-## Using WildAvatar
+## 🎯 Using WildAvatar
 For training and testing on WildAvatar, we currently provide the adapted code for [HumanNeRF](./lib/humannerf) and [GauHuman](./lib/gauhuman). 
+
+## 📝 Citation
+If you find our work useful for your research, please cite our paper.
+
+```
+    @article{huang2024wildavatar,
+    title={WildAvatar: Web-scale In-the-wild Video Dataset for 3D Avatar Creation},
+    author={Huang, Zihao and Hu, ShouKang and Wang, Guangcong and Liu, Tianqi and Zang, Yuhang and Cao, Zhiguo and Li, Wei and Liu, Ziwei},
+    journal={arXiv preprint arXiv:2407.02165},
+    year={2024}
+    }
+```
+
+## 😃 Acknowledgement
+This project is built on source codes shared by [GauHuman](https://github.com/skhu101/GauHuman), [HumanNeRF](https://github.com/chungyiweng/humannerf), and [CLIFF](https://github.com/haofanwang/CLIFF). Many thanks for their excellent contributions!
+
+## 📧 Contact
+If you have any questions, please feel free to contact Tianqi Liu <b>(zihaohuang at hust.edu.cn)</b>.
