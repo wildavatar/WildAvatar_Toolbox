@@ -15,7 +15,7 @@ WildAvatar: Web-scale In-the-wild Video Dataset for 3D Avatar Creation
 <div>
 <div align="center">
     <sup>1</sup>Huazhong University of Science and Technology&emsp;
-    <sup>2</sup>Nanyang Technological University<br>
+    <sup>2</sup>S-Lab, Nanyang Technological University<br>
     <sup>3</sup>Great Bay University&emsp;
     <sup>4</sup>Shanghai AI Laboratory
 </div>
