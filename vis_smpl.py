@@ -19,7 +19,7 @@ def vis_smpl(subject, root_path="data/WildAvatar", save_smpl=True):
                             faces=smpl_model.faces,
                             same_mesh_color=False)
     for frame_id, data in metadata.items():
-        org_img_path = os.path.join(root_path, data['imgname'].split("/")[2], "images", frame_id + ".png")
+        org_img_path = os.path.join(root_path, subject, "images", frame_id + ".png")
         assert os.path.exists(org_img_path)
         smpl_mask_save_path = org_img_path.replace("/images/", "/smpl_masks/").replace("/emc", "/emc-smpl_mask")
         smpl_save_path = org_img_path.replace("/images/", "/smpl/")
