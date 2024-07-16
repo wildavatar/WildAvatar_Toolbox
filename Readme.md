@@ -21,7 +21,7 @@ WildAvatar: Web-scale In-the-wild Video Dataset for 3D Avatar Creation
 </div>
 
 <p align="center">
-  <a href="https://arxiv.org/pdf/2407.02165v2" target='_blank'>
+  <a href="https://arxiv.org/abs/2407.02165" target='_blank'>
     <img src="http://img.shields.io/badge/cs.CV-arXiv%3A2407.02165-B31B1B.svg" alt="ArXiv">
   </a>
   <a href="https://wildavatar.github.io/" target='_blank'>

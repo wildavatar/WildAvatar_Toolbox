@@ -8,7 +8,7 @@ from utils.smpl_utils import Renderer
 from utils.meta_utils import read_meta
 
 
-def vis_smpl(subject, root_path="data/WildAvatar", save_smpl=True):
+def vis_smpl(subject, ext="png", root_path="data/WildAvatar", save_smpl=True):
     metadata = read_meta(subject, root_path)
     intri = list(metadata.values())[0]['cam_intrinsics']
     focal_length = intri[0][0]
@@ -19,7 +19,7 @@ def vis_smpl(subject, root_path="data/WildAvatar", save_smpl=True):
                             faces=smpl_model.faces,
                             same_mesh_color=False)
     for frame_id, data in metadata.items():
-        org_img_path = os.path.join(root_path, subject, "images", frame_id + ".png")
+        org_img_path = os.path.join(root_path, subject, "images", frame_id + "." + ext)
         assert os.path.exists(org_img_path)
         smpl_mask_save_path = org_img_path.replace("/images/", "/smpl_masks/").replace("/emc", "/emc-smpl_mask")
         smpl_save_path = org_img_path.replace("/images/", "/smpl/")
@@ -47,9 +47,10 @@ def parse_args():
     parser = argparse.ArgumentParser(description='parse_args')
     
     parser.add_argument('--subject', type=str, default="__-ChmS-8m8")
+    parser.add_argument('--ext', type=str, default="png")
     return parser.parse_args()
 
 if __name__ == "__main__":
     args = parse_args()
     smpl_model = smplx.body_models.SMPL('assets/SMPL_NEUTRAL.pkl')
-    vis_smpl(subject=args.subject)
+    vis_smpl(subject=args.subject, ext=args.ext)
