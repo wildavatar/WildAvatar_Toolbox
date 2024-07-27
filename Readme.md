@@ -52,7 +52,7 @@ pip install pyopengl==3.1.4
 4. Install [yt-dlp](https://github.com/yt-dlp/yt-dlp)
 5. Run the following scripts
 
-+ **If you need key frames** (RGB+MASK+SMPL, needed for [SMPL Visualization](./#smpl-visualization) and [Creating Wild Avatars](./#-creating-wild-avatars) below),
++ **If you need key frames** (RGB+MASK+SMPL, needed for [SMPL Visualization](https://github.com/wildavatar/WildAvatar_Toolbox/tree/main?tab=readme-ov-file#-smpl-visualization) and [Creating Wild Avatars](https://github.com/wildavatar/WildAvatar_Toolbox/tree/main?tab=readme-ov-file#-creating-wild-avatars) below),
   + please download and extract images from YouTube on your own, by running
     ```bash
     python prepare_data.py --ytdl ${PATH_TO_YT-DLP}$
