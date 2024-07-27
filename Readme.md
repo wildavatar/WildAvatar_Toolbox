@@ -50,12 +50,28 @@ pip install pyopengl==3.1.4
 2. Put the **WildAvatar.zip** under [./data/WildAvatar/](./data/WildAvatar/).
 3. Unzip **WildAvatar.zip**
 4. Install [yt-dlp](https://github.com/yt-dlp/yt-dlp)
-1. Download and Extract images from YouTube, by running
-```bash
-python prepare_data.py --ytdl ${PATH_TO_YT-DLP}$
-```
+5. Run the following scripts
 
-## 📊 Visualization
++ **If you need key frames** (RGB+MASK+SMPL, needed for [SMPL Visualization](./#smpl-visualization) and [Creating Wild Avatars](./#-creating-wild-avatars) below),
+  + please download and extract images from YouTube on your own, by running
+    ```bash
+    python prepare_data.py --ytdl ${PATH_TO_YT-DLP}$
+    ```
+    then you will find images downloaded in [./data/WildAvatar-videos](./data/WildAvatar/xxx/images).
++ **If you need video clips**,
+  + please download video clips from YouTube on your own, by running
+    ```bash
+    python download_video.py --ytdl ${PATH_TO_YT-DLP}$ --output_root "./data/WildAvatar-videos"
+    ```
+    then you will find video clips in [./data/WildAvatar-videos](./data/WildAvatar-videos).
++ **If you need raw videos** (the original user-updated videos),
+  + please download video clips from YouTube on your own, by running
+    ```bash
+    python download_video.py --ytdl ${PATH_TO_YT-DLP}$ --output_root "./data/WildAvatar-videos-raw" --raw
+    ```
+    then you will find video clips in [./data/WildAvatar-videos-raw](./data/WildAvatar-videos-raw).
+
+## 📊 SMPL Visualization
 1. Put the [SMPL_NEUTRAL.pkl](https://smpl.is.tue.mpg.de/) under [./assets/](./assets/).
 2. Run the following script to visualize the smpl overlay of the human subject of ${youtube_ID}
 ```bash
@@ -70,7 +86,7 @@ python vis_smpl.py --subject "__-ChmS-8m8"
 The SMPL mask and overlay visualization can be found in [data/WildAvatar/__-ChmS-8m8/smpl](data/WildAvatar/__-ChmS-8m8/smpl) and [data/WildAvatar/__-ChmS-8m8/smpl_masks](data/WildAvatar/__-ChmS-8m8/smpl_masks)
 
 
-## 🎯 Using WildAvatar
+## 🎯 Creating Wild Avatars
 For training and testing on WildAvatar, we currently provide the adapted code for [HumanNeRF](./lib/humannerf) and [GauHuman](./lib/gauhuman). 
 
 ## 📝 Citation
