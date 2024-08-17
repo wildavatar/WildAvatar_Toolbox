@@ -3,6 +3,7 @@ import subprocess
 import json  
 import shutil
 import argparse
+import cv2
 
 def try_download_and_extract(data_root='data/WildAvatar', ytdl="/bin/yt-dlp"):
     splits = ["train.txt", "test.txt", "val.txt"]
@@ -53,7 +54,11 @@ def try_download_and_extract(data_root='data/WildAvatar', ytdl="/bin/yt-dlp"):
                 for img in img_name:
                     f1 = os.path.join(frames_dir,img)
                     f2 = os.path.join(imgs_dir,img)
-                    shutil.copyfile(f1, f2) 
+                    shutil.copyfile(f1, f2)
+                    org_img = cv2.imread(f2)
+                    org_mask = cv2.imread(f2.replace("/images/", "/masks/")) > 0
+                    masked_img = org_img * org_mask
+                    cv2.imwrite(f2, masked_img)
                 shutil.rmtree(frames_dir)
             
 def generate_new_splits(data_root='data/WildAvatar'):
