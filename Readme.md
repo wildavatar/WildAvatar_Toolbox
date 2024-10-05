@@ -46,7 +46,7 @@ pip install pyopengl==3.1.4
 ```
 
 ## 📦 Prepare Dataset
-1. Download [WildAvatar.zip](https://zenodo.org/record/11526806/files/WildAvatar.zip)
+1. Download [WildAvatar.zip](#)
 2. Put the **WildAvatar.zip** under [./data/WildAvatar/](./data/WildAvatar/).
 3. Unzip **WildAvatar.zip**
 4. Install [yt-dlp](https://github.com/yt-dlp/yt-dlp)
