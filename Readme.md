@@ -1,12 +1,12 @@
 <h2 align="center" width="100%">
-WildAvatar: Web-scale In-the-wild Video Dataset for 3D Avatar Creation
+[CVPR'25] WildAvatar: Learning In-the-wild 3D Avatars from the Web
 </h2>
 <div>
 <div align="center">
-    <a href='https://inso-13.github.io/' target='_blank'>Zihao Huang</a><sup>1</sup>&emsp;
+    <a href='https://inso-13.github.io/' target='_blank'>Zihao Huang</a><sup>1,2</sup>&emsp;
     <a href='https://skhu101.github.io/' target='_blank'>Shoukang Hu</a><sup>2</sup>&emsp;
     <a href='https://wanggcong.github.io/' target='_blank'>Guangcong Wang</a><sup>3</sup>&emsp;
-    <a href='http://tqtqliu.github.io/' target='_blank'>Tianqi Liu</a><sup>1</sup><br>
+    <a href='http://tqtqliu.github.io/' target='_blank'>Tianqi Liu</a><sup>1,2</sup><br>
     <a href='https://yuhangzang.github.io/' target='_blank'>Yuhang Zang</a><sup>4</sup>&emsp;
     <a href='http://faculty.hust.edu.cn/caozhiguo1/en/index.htm/' target='_blank'>Zhiguo Cao</a><sup>1</sup>&emsp;
     <a href='https://weivision.github.io/' target='_blank'>Wei Li</a><sup>2</sup>&emsp;
@@ -46,7 +46,7 @@ pip install pyopengl==3.1.4
 ```
 
 ## 📦 Prepare Dataset
-1. Download [WildAvatar.zip](#)
+1. Download [WildAvatar.zip](https://zenodo.org/record/11526806/files/WildAvatar.zip)
 2. Put the **WildAvatar.zip** under [./data/WildAvatar/](./data/WildAvatar/).
 3. Unzip **WildAvatar.zip**
 4. Install [yt-dlp](https://github.com/yt-dlp/yt-dlp)
@@ -93,11 +93,11 @@ For training and testing on WildAvatar, we currently provide the adapted code fo
 If you find our work useful for your research, please cite our paper.
 
 ```
-    @article{huang2024wildavatar,
-    title={WildAvatar: Web-scale In-the-wild Video Dataset for 3D Avatar Creation},
+    @inproceedings{huang2025wildavatar,
+    title={WildAvatar: Learning In-the-wild 3D Avatars from the Web},
     author={Huang, Zihao and Hu, ShouKang and Wang, Guangcong and Liu, Tianqi and Zang, Yuhang and Cao, Zhiguo and Li, Wei and Liu, Ziwei},
-    journal={arXiv preprint arXiv:2407.02165},
-    year={2024}
+    booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    year={2025}
     }
 ```
 
